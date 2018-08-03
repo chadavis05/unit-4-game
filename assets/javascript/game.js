@@ -20,6 +20,7 @@ $(document).ready(function() {
     $("#winlossBox").text("Losses " + losses);
     
     function reset() {
+        window.location.reload(true);
         random = Math.floor(Math.random()*102+19);
         console.log(random);
         $("#randomnumberBox").text(random);
