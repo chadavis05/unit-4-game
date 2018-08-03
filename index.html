@@ -7,16 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
     </head>
 
     
     
-<body>
+<body>  
     
-    <div class="container">
+    <div>
         <header>
             <h1 style="color:white"><strong>CrystalsCollerctor!</strong></h1>
         </header>
+        <!-- <img src="C:\Users\ccdav\Desktop\GE Coding BootCamp\GTATL201806FSF-Enterprise-GEDigital\Class-Content\04-jquery\02-Homework\Instructions\Images\1-CrystalCollector.jpg" align="right">;-->
         <br>
         <div class="instructions" id="instructions">
             <p style="color: rgb(61, 218, 61)">You will be given a random number at the start of the game.</p>
@@ -29,10 +32,21 @@
             <br>
             <p style="color: rgb(111, 185, 111)">Each time when the game starts, the game will change the values of each crystal.</p>
         </div>
-
-        <div class="radomNumber" id="radomNumber"></div>
+        
+        <br>
+        <div class="randomnumberBox" id="randomnumberBox"></div>
+        <div class="winlossBox" id="winlossBox"></div>
+        <br>
+        <div class="buttons">       
+            <img class="image" id="image1" src="assets/images/crystal1.png" height="100" width="100">
+            <img class="image" id="image2" src="assets/images/crystal2.png" height="100" width="100">
+            <img class="image" id="image3" src="assets/images/crystal3.png" height="100" width="100">
+            <img class="image" id="image4" src="assets/images/crystal4.png" height="100" width="100">
+        </div>  
+        <br>
+        <div class="scoreBox" id="scoreBox"></div>
+        </div>
 
     </div>
-<script src="assets/javascript/game.js"></script>
 </body>
 </html>
