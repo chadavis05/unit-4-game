@@ -21,13 +21,13 @@ $(document).ready(function() {
     function reset() {
         random = Math.floor(Math.random()*102+19);
         console.log(random);
-        $("#numberToGet").text(random);
+        $("#randomnumberBox").text(random);
         var num1 = Math.floor(Math.random()*12+1);
         var num2 = Math.floor(Math.random()*12+1);
         var num3 = Math.floor(Math.random()*12+1);
         var num4 = Math.floor(Math.random()*12+1);
         userTotal = 0;
-        $("#score").text(userTotal);
+        $("#scoreBox").text(userTotal);
     }
     
     function winner() {
