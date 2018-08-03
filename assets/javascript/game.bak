@@ -15,8 +15,7 @@ $(document).ready(function() {
     var wins = 0;
     var losses = 0;
     
-    $("#winlossBox").text("Wins " + wins);
-    $("#winlossBox").text("??????");
+    $("#winlossBox").text("Wins " + wins);   
     $("#winlossBox").text("Losses " + losses);
     
     function reset() {
@@ -41,7 +40,6 @@ $(document).ready(function() {
     function loser() {
         alert("You Lose!!");
         losses++;
-        $("#winlossBox").text("Wins " + wins);
         $("#winlossBox").text("Losses " + losses);
         reset();
     }
@@ -54,12 +52,10 @@ $(document).ready(function() {
         if (userTotal === random) {
             winner()
         }
-        
     
         else if (userTotal > random) {
             loser()
         }
-    });
        
     $("#image2").on("click", function() {
         userTotal = userTotal + num2;
@@ -74,7 +70,6 @@ $(document).ready(function() {
         else if (userTotal > random) {
             loser()
         }
-    });
 
     $("#image3").on("click", function() {
         userTotal = userTotal + num3;
@@ -88,7 +83,6 @@ $(document).ready(function() {
         else if (userTotal > random) {
             loser()
         }
-    });
 
     $("#image4").on("click", function() {
         userTotal = userTotal + num4;
@@ -104,3 +98,6 @@ $(document).ready(function() {
         }
       })
      })
+    })
+   })
+});
